@@ -1,0 +1,221 @@
+body {
+    background-color: #707774;
+}
+
+.main-own-container {
+    background-color: white;
+    margin:5% auto;
+    width: 90vw;
+    height: 150vh;
+    display: grid;
+    grid-template: 100fr / repeat(2, 50fr);
+    grid-template-areas: "login-image login-inputs";
+}
+button{
+    padding: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    width:12vw;
+    height: 4vw;
+    line-height:1rem;
+}
+.login-image {
+    grid-area: login-image;
+    background-image:url("img/5.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.login-inputs {
+    grid-area: login-inputs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5vw;
+}
+
+.welcome-title {
+    font-size: 2vw;
+    color: #888886;
+}
+
+.logo-container img {
+    width: 15vw;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 10vw;
+}
+label {
+    color: #888886;
+    font-size: 1.3vw;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #b6aeb6;
+    padding: 0 0.5rem;
+    margin-bottom: 1vw;
+
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1.5px solid brown;
+}
+#username , #password {
+    height: 2vw;
+    width: 40vw;
+}
+
+#forgot {
+    text-align: right;
+    color: grey;
+    margin-top: 0.4vw;
+    font-size: 1vw;
+}
+
+hr {
+    /*display: inline;*/
+    height: 0.1vw;
+    width: 20vw;
+    border: 0;
+    border-top: 1px solid #b6aeb6;
+    margin: auto;
+}
+
+.or {
+    margin-top: 2vw;
+    padding-top: 1vw;
+}
+.or-text{
+    /*display: inline;*/
+    font-size:1.2vw;
+    width: 3vw;
+    margin:-1vw auto auto auto;
+    text-align: center;
+    background-color: white;
+}
+
+.sign-in-logo{
+    margin: auto;
+    margin-top: 2vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+.iconify {
+vertical-align: middle;
+}
+.signinbtn {
+    margin-top: 2vw;
+    padding: 0;
+    text-align: center;
+}
+.signintext {
+    text-align: center;
+    border-radius: 1vw;
+}
+
+.sign-in-text{
+    display: inline;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    color: black;
+    vertical-align: middle;
+}
+.sign-in-logo {
+    margin-top: 5vw;
+}
+.new-account {
+    font-size: 1.2vw;
+    margin: auto;
+}
+.new-account a {
+   text-decoration: underline;
+}
+
+@media screen and (max-width: 470px){
+    .login-image {
+        display: none;
+    }
+    .main-own-container {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+    .login-inputs {
+        width: 100%;
+        align-content: center;
+        align-items: center;
+    }
+    button{
+        font-size: 2vw;
+        width:16vw;
+        height: 5.3vw;
+        line-height:1.3rem;
+    }
+    .welcome-title {
+        font-size: 5vw;
+    }
+
+    .logo-container img {
+        width: 40vw;
+    }
+    h2 {
+        margin-bottom: 20vw;
+    }
+    label {
+        font-size: 3vw;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        margin-bottom: 2.5vw;
+
+    }
+
+    #username , #password {
+        height: 5vw;
+        width: 70vw;
+    }
+
+    #forgot {
+        margin-top: 4vw;
+        font-size: 3vw;
+    }
+
+    hr {
+        /*display: inline;*/
+        height: 0.3vw;
+        width: 45vw;
+    }
+
+    .or {
+        margin-top: 4vw;
+        padding-top: 2.5vw;
+    }
+    .or-text{
+        /*display: inline;*/
+        font-size:3vw;
+        width: 6vw;
+        margin:-2.6vw auto auto auto;
+    }
+
+    .sign-in-logo{
+        margin: auto;
+        margin-top: 5vw;
+    }
+    .sign-in-text {
+        margin-top: 5vw;
+        font-size: 4vw;
+    }
+    .new-account {
+        font-size: 4vw;
+    }
+}
